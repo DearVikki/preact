@@ -1,7 +1,10 @@
 {
-  "modules": "umdStrict",
   "sourceMaps": true,
-  "compact": true,
   "comments": false,
-  "loose": "all"
+  "presets": ["es2015", "stage-0", "react"],
+  "plugins": [
+    ["transform-react-jsx", {
+      "pragma": "h" // default pragma is React.createElement
+    }]
+  ]
 }
